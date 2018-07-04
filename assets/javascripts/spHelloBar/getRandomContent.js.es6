@@ -1,5 +1,5 @@
 export default function (cb) {
-  const host = (window.location.host == 'discourse.vm') ? 'http://www.blog.vm' : 'https://www.sitepoint.com';
+  const host = window.location.protocol + '//' + window.location.host;
 
   $.ajax({
     type: 'POST',
